@@ -34,8 +34,6 @@ def get_all_monetary_account_active():
     return all_monetary_account_bank_active
 
 def check_cookie():
-    app.logger.warning("SECRET = " + environ["SECRET"])
-    app.logger.warning("secret = " + request.cookies.get("secret"))
     return request.cookies.get("secret") == environ["SECRET"]
 
 @app.route("/get_balances", methods=["GET"])

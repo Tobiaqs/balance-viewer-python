@@ -48,4 +48,4 @@ def get_balances():
     return Response(dumps(data), mimetype="application/json")
 
 if __name__ == "__main__":
-    app.run(debug=("DEBUG" in environ), port=(int(environ["PORT"]) if "PORT" in environ else 5000), host="0.0.0.0")
+    app.run(debug=("DEBUG" in environ), port=(int(environ["PORT"]) if "PORT" in environ else 5000), host=(environ["IP"] if "IP" in environ else "127.0.0.1"))

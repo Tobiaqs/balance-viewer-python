@@ -7,10 +7,5 @@ name = "pypi"
 bunq-sdk = "*"
 flask = "*"
 
-[dev-packages]
-pylint = "*"
-rope = "*"
-ptpython = "*"
-
 [requires]
 python_version = "3.6"
